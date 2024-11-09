@@ -1,0 +1,9 @@
+.rotate180{
+    transform: rotate(180deg);
+}
+.mirror{
+    transform: scaleX(-1);
+}
+.mirrorY{
+    transform: scaleY(-1);
+}
