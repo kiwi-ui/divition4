@@ -15,8 +15,8 @@ function App() {
     <Salutation />,
     <Couple />,
     <Schedule />,
-    <Gallery />,
     <Gift />,
+    <Gallery />,
     <Closing />
   ]
   return (

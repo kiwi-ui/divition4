@@ -9,7 +9,7 @@ const Schedule = () => {
                 <p className='border-start border-4  d-block' style={{writingMode: 'vertical-lr', height:'4rem'}}></p>
               </div>
               
-              <div className="py-2">
+              <div className="py-2 mt-3">
                 <p className="mb-1">Akad Nikah</p>
                 <div>
                   <p className="mb-0">MINGGU, 30 AGUSTUS 2026</p>
@@ -22,7 +22,7 @@ const Schedule = () => {
                 <button><MdOutlineAddLocationAlt />Buka Maps</button>
               </div>
 
-              <div> 
+              <div className="mt-3"> 
                 <p className="mb-1">Akad Nikah</p>
                 <div>
                   <p className="mb-0">MINGGU, 30 AGUSTUS 2026</p>
