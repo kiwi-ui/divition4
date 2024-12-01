@@ -6,10 +6,11 @@ import Schedule from './pages/Schedule'
 import Gallery from './pages/Gallery'
 import Gift from './pages/Gift'
 import Closing from './pages/Closing'
-import frame from './assets/frame.webp';
-import style from './App.module.css';
+import frame from './assets/frame.webp'
+import style from './App.module.css'
 import Credits from './pages/Credits'
 import Wishes from './pages/Wishes'
+import index from './index.module.css'
 
 function App() {
   const [isModalShown, setIsModalShown] = useState(false);
@@ -24,11 +25,11 @@ function App() {
     <Credits />
   ]
   return (
-    <body className="vh-100 px-4">
+    <body className={`${index.bgCoverMain} vh-100 px-4`}>
       {/* <img className={`position-absolute top-0 start-0 h-25 ${style.mirror}`} src={frame} alt='frame' />
       <img className="position-absolute top-0 end-0 h-25" src={frame} alt='frame' /> */}
 
-      <div className="main-content h-100 d-flex justify-content-center align-items-center ">
+      <div className={`main-content h-100 d-flex justify-content-center align-items-center`}>
            {pagesArray[activeIndex]}
       </div>
 

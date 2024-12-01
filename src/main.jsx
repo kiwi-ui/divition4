@@ -7,7 +7,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.js';
 import Cover from './pages/Cover/index.jsx';
-
+import './App.css'
 createRoot(document.getElementById('root')).render(
   <Suspense fallback={<Loading />}>
   <BrowserRouter>

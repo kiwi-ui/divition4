@@ -1,0 +1,28 @@
+:root{
+    --bgPrimary: rgba(187,198,169,255);
+    --bgSecondary: rgba(249,240,229,255);
+    --bgBorder: rgba(226,233,218,255);
+}
+
+.bgSecondary{
+    background-color: var(--bgSecondary);
+}
+.bgPrimary{
+    background-color: var(--bgPrimary);
+}
+.bgCoverMain{
+    background-image: url('./assets/bgcovermain1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bgCoverMain::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}

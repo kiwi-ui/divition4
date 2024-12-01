@@ -3,6 +3,12 @@ import { BsCalendar } from 'react-icons/bs';
 import { BiHomeAlt2, BiEnvelopeOpen } from 'react-icons/bi';
 import { RiGalleryLine } from 'react-icons/ri';
 import { TiArrowSortedUp } from "react-icons/ti";
+import { RiHeartsFill } from "react-icons/ri";
+import { TbMessageHeart } from "react-icons/tb";
+import { TiGift } from "react-icons/ti";
+import { PiHandsPrayingDuotone } from "react-icons/pi";
+import { RiCalendarScheduleLine } from "react-icons/ri";
+import { RiHeartsLine } from "react-icons/ri";
 import style from './index.module.css';
 import Salutation from '../../pages/Salutation';
 import Couple from '../../pages/Couple';
@@ -28,28 +34,29 @@ const Navbar = ({setActiveIndex, activeIndex}) => {
     };
 
     return (
-        <nav className={`navbar bg-light d-flex flex-row ${style.z10} position-absolute bottom-0 ${style.wNavbar}`}>
-            <button className="bg-transparent border-0 position-absolute text-white start-50 bottom-100 translate-middle-x bg-black">
-				<TiArrowSortedUp className={`fs-2 text-black`} onClick={ () => hideSideBar() }/>
+        <nav className={`navbar ${isSideBarHided ? "" : `${ style.p0 }` } position-absolute ${ style.navbarBg } bg-white d-flex flex-row bottom-0 ${ style.wNavbar }`} style={{zIndex: 100}}>
+            <button className={`bg-transparent border-0 position-absolute start-50 bottom-100 translate-middle-x ${style.toggleNavbarColor}`}>
+				<TiArrowSortedUp className={`fs-2 ${style.toggleNavbarTextColor}`} onClick={ () => hideSideBar() }/>
 			</button>
-            <ul className={`${isSideBarHided ? "" : "d-none"} navbar-nav ${style.navbar} flex-row align-items-center gap-3 px-3  d-flex text-white w-100 overflow-scroll list-group`}>
+            
+            <ul className={`${isSideBarHided ? "" : `d-none`} navbar-nav ${ style.navbar } flex-row align-items-center  gap-3 px-3  d-flex text-white w-100 overflow-scroll list-group`}>
                 {[
-                    { icon: <BiHomeAlt2 className="fs-2 m-0 p-0" />, label: 'Home' },
-                    { icon: <BsCalendar className="fs-2 m-0 p-0" />, label: 'Calendar' },
-                    { icon: <RiGalleryLine className="fs-2 m-0 p-0" />, label: 'Gallery' },
-                    { icon: <BiEnvelopeOpen className="fs-2 m-0 p-0" />, label: 'Messages' },
-                    { icon: <BiHomeAlt2 className="fs-2 m-0 p-0" />, label: 'Home' },
-                    { icon: <BsCalendar className="fs-2 m-0 p-0" />, label: 'Calendar' },
+                    { icon: <BiHomeAlt2 className="m-0 p-0" size={50}/> },
+                    { icon: <RiHeartsLine className="m-0 p-0" size={50}/> },
+                    { icon: <RiCalendarScheduleLine className="m-0 p-0" size={50}/> },
+                    { icon: <TbMessageHeart className="m-0 p-0" size={50}/> },
+                    { icon: <TiGift className="m-0 p-0" size={50}/> },
+                    { icon: <PiHandsPrayingDuotone className="m-0 p-0"  size={50}/> },
                 ].map((item, index) => (
                     <li
-                        key={index}
-                        className={`nav-item px-2 d-flex py-2 justify-content-center flex-column rounded-3 ${
-                            activeIndex === index ? style.active : ''
-                        }`}
+                        key={ index }
+                        className={`nav-item px-2 d-flex py-2 rounded-3`}
                         onClick={() => handleTabClick(index)}
                     >
-                        <button className="nav-link p-0">{item.icon}</button>
-                        <p className="fs-5 m-0">{item.label}</p>
+                        <button className={`nav-link p-0  ${
+                            activeIndex === index ? style.active : ''
+                        }`}>{item.icon}</button>
+                        {/* <p className="fs-5 m-0">{item.label}</p> */}
                     </li>
                 ))}
             </ul>
