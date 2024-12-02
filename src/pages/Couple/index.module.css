@@ -1,3 +1,6 @@
 .borderRadius{
     border-radius: 4rem 0 0 0;
 }
+.bgWhiteTrasnparent{
+    background-color: rgb(255, 255, 255, 0.7);
+}

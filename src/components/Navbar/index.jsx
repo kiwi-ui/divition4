@@ -41,12 +41,12 @@ const Navbar = ({setActiveIndex, activeIndex}) => {
             
             <ul className={`${isSideBarHided ? "" : `d-none`} navbar-nav ${ style.navbar } flex-row align-items-center  gap-3 px-3  d-flex text-white w-100 overflow-scroll list-group`}>
                 {[
-                    { icon: <BiHomeAlt2 className="m-0 p-0" size={50}/> },
-                    { icon: <RiHeartsLine className="m-0 p-0" size={50}/> },
-                    { icon: <RiCalendarScheduleLine className="m-0 p-0" size={50}/> },
-                    { icon: <TbMessageHeart className="m-0 p-0" size={50}/> },
-                    { icon: <TiGift className="m-0 p-0" size={50}/> },
-                    { icon: <PiHandsPrayingDuotone className="m-0 p-0"  size={50}/> },
+                    { icon: <BiHomeAlt2 className="m-0 p-2" size={50}/> },
+                    { icon: <RiHeartsLine className="m-0 p-2" size={50}/> },
+                    { icon: <RiCalendarScheduleLine className="m-0 p-2" size={50}/> },
+                    { icon: <TbMessageHeart className="m-0 p-2" size={50}/> },
+                    { icon: <TiGift className="m-0 p-2" size={50}/> },
+                    { icon: <PiHandsPrayingDuotone className="m-0 p-2"  size={50}/> },
                 ].map((item, index) => (
                     <li
                         key={ index }

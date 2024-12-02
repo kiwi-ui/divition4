@@ -4,13 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import profile from '../../assets/profile.webp'
 import { BsInstagram } from "react-icons/bs";
 import couple from '../../assets/&.png';
-import style from './index.module.css'
+import style from './index.module.css';
+
 const Salutation = () => {
     const { name } = useParams();
     
     return (
         <section className={ `d-flex justify-content-center align-items-center text-center` } style={{ zIndex:10, height:'80%' }}>
-            <div className={ `overflow-scroll container rounded-5 border py-4 ${ style.bgWhiteTrans } text-black border border-5 border-warning-subtle` }>
+            <div className={ `overflow-scroll container rounded-5  py-4 ${ style.bgWhiteTrans } text-black  ${style.borderTosca}` }>
                 {/* <img className="position-relative top-0 end-0" width={250} src={profile} alt='profile' /> */}
                 <p className={ `fw-bold fs-5` }>Assalamualaikum 
                     <br/> Warahmatullahi Wabarakatuh</p>
