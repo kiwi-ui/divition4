@@ -1,6 +1,6 @@
 import { useState } from 'react';
 // import fonts from '../../assets/fonts/fonts.module.css';
-
+import style from './index.module.css'
 const Wishes = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -50,8 +50,8 @@ const Wishes = () => {
     }
 
     return (
-        <section className="wish d-flex align-items-center my-5">
-            <div className={ `container rounded-4 shadow-lg d-flex flex-column justify-content-center w-75` }>
+        <section className={`wish d-flex align-items-center my-5`} style={{ zIndex: 10 }}>
+            <div className={ `container ${ style.bgWhiteTrans } rounded-4 shadow-lg d-flex flex-column justify-content-center` }>
                 <div id="wish" className=" py-5 container">
                     <p className={`fw-bold m-0 text-center fs-1 mb-3 pb-2`}>Ucapan</p>
 

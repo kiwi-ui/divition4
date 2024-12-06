@@ -9,3 +9,6 @@ button:hover{
         width: 65%;
     }
 }
+.bgWhiteTrans{
+    background-color: rgb(255, 255, 255, 0.7);
+}

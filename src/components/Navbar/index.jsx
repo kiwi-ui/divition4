@@ -18,7 +18,7 @@ import Gift from '../../pages/Gift';
 import Closing from '../../pages/Closing';
 
 
-const Navbar = ({setActiveIndex, activeIndex}) => {
+const Navbar = ({ setActiveIndex, activeIndex }) => {
     // const pagesArray = [
     //     <Salutation />,
     //     <Couple />,
@@ -34,19 +34,19 @@ const Navbar = ({setActiveIndex, activeIndex}) => {
     };
 
     return (
-        <nav className={`navbar ${isSideBarHided ? "" : `${ style.p0 }` } position-absolute ${ style.navbarBg } bg-white d-flex flex-row bottom-0 ${ style.wNavbar }`} style={{zIndex: 100}}>
+        <nav className={`navbar rounded-4 ${ style.maxWidth } ${ isSideBarHided ? "" : `${ style.p0 }` } position-absolute ${ style.navbarBg } bg-white d-flex flex-row bottom-0 translate-middle-x start-50 mb-3 ${ style.wNavbar }`} style={{ zIndex: 100 }}>
             <button className={`bg-transparent border-0 position-absolute start-50 bottom-100 translate-middle-x ${style.toggleNavbarColor}`}>
 				<TiArrowSortedUp className={`fs-2 ${style.toggleNavbarTextColor}`} onClick={ () => hideSideBar() }/>
 			</button>
             
-            <ul className={`${isSideBarHided ? "" : `d-none`} navbar-nav ${ style.navbar } flex-row align-items-center  gap-3 px-3  d-flex text-white w-100 overflow-scroll list-group`}>
+            <ul className={`${isSideBarHided ? "" : `d-none`} navbar-nav ${ style.navbar } flex-row align-items-center  gap-2   d-flex text-white w-100 overflow-scroll list-group`}>
                 {[
-                    { icon: <BiHomeAlt2 className="m-0 p-2" size={50}/> },
-                    { icon: <RiHeartsLine className="m-0 p-2" size={50}/> },
-                    { icon: <RiCalendarScheduleLine className="m-0 p-2" size={50}/> },
-                    { icon: <TbMessageHeart className="m-0 p-2" size={50}/> },
-                    { icon: <TiGift className="m-0 p-2" size={50}/> },
-                    { icon: <PiHandsPrayingDuotone className="m-0 p-2"  size={50}/> },
+                    { icon: <BiHomeAlt2 className="m-0 p-2" size={45}/> },
+                    { icon: <RiHeartsLine className="m-0 p-2" size={45}/> },
+                    { icon: <RiCalendarScheduleLine className="m-0 p-2" size={45}/> }, 
+                    { icon: <TbMessageHeart className="m-0 p-2" size={45}/> },
+                    { icon: <TiGift className="m-0 p-2" size={45}/> },
+                    { icon: <PiHandsPrayingDuotone className="m-0 p-2"  size={45}/> },
                 ].map((item, index) => (
                     <li
                         key={ index }
@@ -55,7 +55,7 @@ const Navbar = ({setActiveIndex, activeIndex}) => {
                     >
                         <button className={`nav-link p-0  ${
                             activeIndex === index ? style.active : ''
-                        }`}>{item.icon}</button>
+                        } ${style.navHover}`}>{item.icon}</button>
                         {/* <p className="fs-5 m-0">{item.label}</p> */}
                     </li>
                 ))}

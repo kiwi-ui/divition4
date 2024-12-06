@@ -31,8 +31,15 @@ a {text-decoration: none; color: white;}
 }
 
 .toggleNavbarTextColor{
-    color: #53846c;
+    color: #62c394;
 }
 .navbarBg{
     background-color: rgba(255, 255, 255, 0.341);
+}
+.maxWidth{
+    max-width: 320px;
+}
+.navHover:hover{
+    color: #62c394 !important;
+    background-color: transparent !important;
 }

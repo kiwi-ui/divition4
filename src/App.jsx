@@ -11,6 +11,7 @@ import style from './App.module.css'
 import Credits from './pages/Credits'
 import Wishes from './pages/Wishes'
 import index from './index.module.css'
+import MusicPlayer from './components/MusicPlayer'
 
 function App() {
   const [isModalShown, setIsModalShown] = useState(false);
@@ -28,7 +29,7 @@ function App() {
     <body className={`${index.bgCoverMain} vh-100 px-4`}>
       {/* <img className={`position-absolute top-0 start-0 h-25 ${style.mirror}`} src={frame} alt='frame' />
       <img className="position-absolute top-0 end-0 h-25" src={frame} alt='frame' /> */}
-
+      <MusicPlayer />
       <div className={`main-content h-100 d-flex justify-content-center align-items-center`}>
            {pagesArray[activeIndex]}
       </div>

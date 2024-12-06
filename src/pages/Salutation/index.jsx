@@ -10,8 +10,8 @@ const Salutation = () => {
     const { name } = useParams();
     
     return (
-        <section className={ `d-flex justify-content-center align-items-center text-center` } style={{ zIndex:10, height:'80%' }}>
-            <div className={ `overflow-scroll container rounded-5  py-4 ${ style.bgWhiteTrans } text-black  ${style.borderTosca}` }>
+        <section className={ `d-flex justify-content-center align-items-center text-center` } style={{ zIndex:10 }}>
+            <div className={ `overflow-scroll rounded-5 px-3 py-5 ${ style.bgWhiteTrans } text-black ${style.widthConditional}  ${ style.borderTosca }` } style={{ zIndex:10 }}>
                 {/* <img className="position-relative top-0 end-0" width={250} src={profile} alt='profile' /> */}
                 <p className={ `fw-bold fs-5` }>Assalamualaikum 
                     <br/> Warahmatullahi Wabarakatuh</p>

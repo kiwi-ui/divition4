@@ -1,12 +1,13 @@
 import { MdOutlineAddLocationAlt } from "react-icons/md";
+import style from './style.module.css';
 
 const Schedule = () => {
   return (
-         <section className={ `text-white  d-flex flex-column justify-content-between align-items-center text-center` }>
-            <div className={ `container bg-danger border py-4 px-4 mx-5 py-5 ` }>
+         <section className={ `text-black d-flex flex-column justify-content-center align-items-center  text-center` } style={{ zIndex:10, height:'95%' }}>
+            <div className={ `container overflow-scroll rounded-top-pill rounded-bottom-0 ${ style.bgWhiteTrasnparent } border pt-5 pb-4 px-5` }>
               <div className="d-flex flex-column align-items-center">
-                <p className="fs-1">Save the Date</p>
-                <p className='border-start border-4  d-block' style={{writingMode: 'vertical-lr', height:'4rem'}}></p>
+                <p className="fs-2">Save the Date</p>
+                <p className='border-start border-4 border-black  d-block my-2' style={{writingMode: 'vertical-lr', height:'4rem'}}></p>
               </div>
               
               <div className="py-2 mt-3">

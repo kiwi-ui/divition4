@@ -1,7 +1,7 @@
 import { GrFormClose } from 'react-icons/gr';
-// import qr from '../../assets/img/qr-1.webp';
+import qr from '../../assets/qr-1.webp';
 import { useState } from 'react';
-
+import style from './index.module.css';
 const Gift = () => {
     const [showCopy, setShowCopy] = useState(false)
     const copyId =() => {
@@ -12,15 +12,15 @@ const Gift = () => {
     }
 
     return (
-        <div className={ `d-flex vh-100 w-100 position-fixed top-0 justify-content-center align-items-center`} style={{zIndex: 10}}>
-            <div className="top-50">
-                <div className="rounded-5 container" style={{background:"rgba(255,255,255, 0.6)"}}>
+        <div className={ `d-flex vh-100 w-100 position-fixed top-0 justify-content-center align-items-center`} style={{ zIndex: 10 }}>
+            <div className={`top-50 ${style.bgWhiteTrasnparent} rounded-4` }>
+                <div className="container">
                     {/* <div className="d-flex justify-content-end">
                         <button className="bg-transparent border-0 fs-1" type="button" onClick={ toggle }><GrFormClose /></button>
                     </div> */}
 
                     <div className="text-center pb-4 position-relative">
-                        {/* <img src={ qr } className="position-relative h-50" alt="qr code" />   */}
+                        <img src={ qr } className="position-relative h-50 pt-4 rounded" alt="qr code" />  
                         <div className="my-2">
                             <p className="fs-5 fw-bold m-0">Anggara</p>
                             <p className=''>091204789789 / Bank Mandiri</p>
