@@ -9,6 +9,7 @@ import { TiGift } from "react-icons/ti";
 import { PiHandsPrayingDuotone } from "react-icons/pi";
 import { RiCalendarScheduleLine } from "react-icons/ri";
 import { RiHeartsLine } from "react-icons/ri";
+import { FaRegCopyright } from "react-icons/fa6";
 import style from './index.module.css';
 import Salutation from '../../pages/Salutation';
 import Couple from '../../pages/Couple';
@@ -34,8 +35,8 @@ const Navbar = ({ setActiveIndex, activeIndex }) => {
     };
 
     return (
-        <nav className={`navbar rounded-4 ${ style.maxWidth } ${ isSideBarHided ? "" : `${ style.p0 }` } position-absolute ${ style.navbarBg } bg-white d-flex flex-row bottom-0 translate-middle-x start-50 mb-3 ${ style.wNavbar }`} style={{ zIndex: 100 }}>
-            <button className={`bg-transparent border-0 position-absolute start-50 bottom-100 translate-middle-x ${style.toggleNavbarColor}`}>
+        <nav className={`navbar rounded-4 ${ style.maxWidth } ${ isSideBarHided ? "" : `${ style.p0 }` } position-absolute ${ style.navbarBg } bg-white d-flex flex-row bottom-0 translate-middle-x start-50 mb-2 ${ style.wNavbar }`} style={{ zIndex: 100 }}>
+            <button className={`${style.navHover} bg-transparent border-0 position-absolute start-50 bottom-100 translate-middle-x ${style.toggleNavbarColor}`}>
 				<TiArrowSortedUp className={`fs-2 ${style.toggleNavbarTextColor}`} onClick={ () => hideSideBar() }/>
 			</button>
             
@@ -47,6 +48,7 @@ const Navbar = ({ setActiveIndex, activeIndex }) => {
                     { icon: <TbMessageHeart className="m-0 p-2" size={45}/> },
                     { icon: <TiGift className="m-0 p-2" size={45}/> },
                     { icon: <PiHandsPrayingDuotone className="m-0 p-2"  size={45}/> },
+                    { icon: <FaRegCopyright className="m-0 p-2"  size={45}/> }                    
                 ].map((item, index) => (
                     <li
                         key={ index }

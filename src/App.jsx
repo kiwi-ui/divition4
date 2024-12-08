@@ -23,7 +23,9 @@ function App() {
     <Schedule />,
     <Wishes />,
     <Gift />,
-    <Credits />
+    <Credits />,
+    <Closing />
+
   ]
   return (
     <body className={`${index.bgCoverMain} vh-100 px-4`}>

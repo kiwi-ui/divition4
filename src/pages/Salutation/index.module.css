@@ -10,11 +10,6 @@
 .bgWhiteTrans{
     background-color: rgb(255, 255, 255, 0.7);
 }
-.borderTosca{
-    border: #53846c !important;
-    border-color: #53846c !important;
-    border-style: dashed;
-}
 @media only screen and (min-width: 720px) {
     .widthConditional{
         width: 65%;

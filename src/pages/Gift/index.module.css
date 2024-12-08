@@ -1,3 +1,6 @@
 .bgWhiteTrasnparent{
     background-color: rgb(255, 255, 255, 0.7);
 }
+.bgButton{
+    background-color: #62c394 !important;
+}

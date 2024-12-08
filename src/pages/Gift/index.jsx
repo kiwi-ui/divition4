@@ -1,7 +1,9 @@
 import { GrFormClose } from 'react-icons/gr';
 import qr from '../../assets/qr-1.webp';
 import { useState } from 'react';
+import { MdContentCopy } from "react-icons/md";
 import style from './index.module.css';
+
 const Gift = () => {
     const [showCopy, setShowCopy] = useState(false)
     const copyId =() => {
@@ -13,7 +15,7 @@ const Gift = () => {
 
     return (
         <div className={ `d-flex vh-100 w-100 position-fixed top-0 justify-content-center align-items-center`} style={{ zIndex: 10 }}>
-            <div className={`top-50 ${style.bgWhiteTrasnparent} rounded-4` }>
+            <div className={`top-50 border border-success border-2 ${ style.bgWhiteTrasnparent } rounded-4` }>
                 <div className="container">
                     {/* <div className="d-flex justify-content-end">
                         <button className="bg-transparent border-0 fs-1" type="button" onClick={ toggle }><GrFormClose /></button>
@@ -26,12 +28,15 @@ const Gift = () => {
                             <p className=''>091204789789 / Bank Mandiri</p>
                         </div>
                         <div className="d-flex justify-content-center gap-3">
-                            <button className="py-2 px-4 position-relative rounded-2 border-0 text-white" style={{ background: "#2b2b2b" }} onClick={ copyId }>Copy</button>
+                            <button className={ `d-flex flex-row justify-content-center align-items-center gap-2 fw-semibold py-2 px-3 position-relative rounded-2 border-0 text-white ${ style.bgButton }` } onClick={ copyId }>
+                                <MdContentCopy />
+                                <p className='mb-0'>Copy</p>
+                            </button>
                             {/* <a href="https://wa.me/082336420166?text=I%20confirm%20that%20I%20have%20sent%20the%20money%20transfer%20for%20the%20wedding%20gift." target="_blank" rel='noreferrer'> */}
                                 {/* <button className="py-2 px-4 position-relative rounded-2 border-0 text-white fw-semibold">Konfirmasi</button> */}
                             {/* </a> */}
                         </div>
-                        <p className={`${ showCopy ? "d-block" : "d-none" } fs-2 position-fixed translate-middle-x start-50 rounded-3 text-white p-3`} style={{top: "90%" }}>Copied</p>
+                        <p className={ `${ showCopy ? "d-block" : "d-none" } position-fixed translate-middle-x start-50 rounded-3 p-3 mb-0`} style={{top: "90%" }}>Copied</p>
                     </div>
                 </div>
             </div>
