@@ -20,7 +20,7 @@ const Cover = () => {
                 className={ `text-center py-0 px-3 mb-0 rounded-4 ` } style={{zIndex:1, marginTop: '10rem'}}
             >
                 <p className={`${font.cinzel} fs-5 mb-1`}>Undangan Pernikahan</p>
-                <p className={ `fw-bold ${font.vidaloka} ${style.textPrimary}` } style={{ fontSize: '2.4rem'}}>Yusni & Anggara</p>
+                <p className={ `fw-bold ${font.vidaloka} ${style.textPrimary}` } style={{ fontSize: '2.4rem'}}>Anonim & Anonnim</p>
 
                 <div className=''>
                     <p className="m-0" style={{fontSize: '0.8rem'}}>Kepada yang terhormat</p>

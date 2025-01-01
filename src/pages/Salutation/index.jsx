@@ -25,7 +25,7 @@ const Salutation = () => {
             >
                 <div className="text-start">
                     <div className='my-2'>
-                        <p className={`fs-1 mb-0 ${ font.cinzel } fw-bold`}>Yusni</p>
+                        <p className={`fs-1 mb-0 ${ font.cinzel } fw-bold`}>Anonim Anonim</p>
                     </div>
 
                     <div>
@@ -33,7 +33,7 @@ const Salutation = () => {
                     </div>
                     
                     <div className='my-2'>
-                        <p className={`fs-1 mb-0 ${ font.cinzel } fw-bold`}>Angga</p>
+                        <p className={`fs-1 mb-0 ${ font.cinzel } fw-bold`}>Anonim Anonim</p>
                     </div>
                     <p className='border border-success d-block position-relative mb-4 mt-3' style={{width:'4rem'}}></p>
                 </div>

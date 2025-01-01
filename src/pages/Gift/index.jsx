@@ -29,7 +29,7 @@ const Gift = () => {
                     <div className="text-center pb-4 position-relative">
                         <img src={ qr } className=" pt-4 w-75 rounded" alt="qr code" />  
                         <div className="my-2">
-                            <p className={` ${font.cinzel} fs-5 fw-bold m-0`}>Anggara</p>
+                            <p className={` ${font.cinzel} fs-5 fw-bold m-0`}>Anonim Anonim</p>
                             <p className=''>091204789789 / Bank Mandiri</p>
                         </div>
                         <div className="d-flex justify-content-center gap-3">

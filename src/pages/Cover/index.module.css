@@ -8,7 +8,7 @@
     transform: scaleY(-1);
 }
 .bgCover3{
-    background-image: url('../../assets/bgCover3.png');
+    background-image: url('../../assets/bgcover3.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -14,7 +14,7 @@ const Credits = () => {
                       }}
                   >
                 <p className={`my-1 ${font.cinzel} fw-light`}>Kami yang berbahagia<br/>
-                <p className={ `fs-1 fw-bolder ${font.vidaloka}` } style={{marginBottom: '-1.3rem'}}>Yusni & Anggara</p></p>
+                <p className={ `fs-1 fw-bolder ${font.vidaloka}` } style={{marginBottom: '-1.3rem'}}>Anonim Anonim & Anonim Anonim</p></p>
                 <p className={`${font.cinzel}`}>27 Juli 2009</p>
                 <p className={`${font.cinzel} border-start border-4 d-block border-success rounded`} style={{ writingMode: 'vertical-lr', height:'5rem' }}></p>
                 

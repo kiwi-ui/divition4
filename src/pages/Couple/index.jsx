@@ -22,8 +22,8 @@ const Couple = () => {
                 <h1 className={` ${ font.cinzel } fs-1 mb-4 fw-bold`} style={{ letterSpacing:'0.3rem' }}>Groom and <br/> Bride</h1>
 
                 <div className='d-flex flex-column mb-2 justify-content-end align-items-end'>
-                    <p className={` ${ font.vidaloka } mb-2 fs-5 fw-semibold`}>Yusni Anggara, S.T</p>
-                    <p className={` ${ font.caudex }` } style={{fontSize: '0.8rem'}}>Putra pertama dari <br/> Bapak Yusni dan Ibu Anggara</p>
+                    <p className={` ${ font.vidaloka } mb-2 fs-5 fw-semibold`}> Anonim Anonim, S.T</p>
+                    <p className={` ${ font.caudex }` } style={{fontSize: '0.8rem'}}>Putra pertama dari <br/> Bapak anonim dan Ibu anonim</p>
                     <button type='button' className={`btn btn-success ${ style.bgButton } d-flex flex-row gap-2 rounded justify-items-center align-items-center py-1 px-2 border-0 text-white`}>
                         <FiInstagram className='fs-5 text-white'/>
                         <p className='mb-1' >Instagram</p>
@@ -33,7 +33,7 @@ const Couple = () => {
                 <p className={` ${ font.vidaloka } fs-1 py-3`}>&</p>
 
                 <div className='d-flex flex-column mt-2 justify-content-end align-items-end'>
-                    <p className={` ${ font.vidaloka } mb-2 fs-4 fw-semibold`}>Yusni Anggara, S.T</p>
+                    <p className={` ${ font.vidaloka } mb-2 fs-4 fw-semibold`}> Anonim Anonim, S.T</p>
                     <p className={` ${ font.caudex }` } style={{fontSize: '0.8rem'}} >Putra pertama dari <br/> Bapak Yusni dan Ibu Anggara</p>
                     <button type='button' className={`btn btn-success ${ style.bgButton } d-flex flex-row gap-2 rounded justify-items-center align-items-center py-1 px-2 border-0 text-white`}>
                         <FiInstagram className='fs-5 text-white'/>
