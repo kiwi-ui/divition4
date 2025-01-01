@@ -6,17 +6,26 @@ import { BsInstagram } from "react-icons/bs";
 import couple from '../../assets/&.png';
 import style from './index.module.css';
 import Countdown from '../../components/Countdown';
+import font from '../../fonts.module.css';
+import * as motion from 'motion/react-client'
 
 const Salutation = () => {
     const { name } = useParams();
     
     return (
         <section className={ `d-flex  justify-content-center align-items-center` } style={{ zIndex:10 }}>
-            <div className={ `overflow-scroll border-2 border border-success rounded-bottom-3 px-3 py-5 ${ style.bgWhiteTrans } px-5 text-black ${style.widthConditional}  ${ style.borderTosca } shadow-lg` } style={{ zIndex:10, borderRadius:'0.8rem 15rem' }}>
-                {/* <img className="position-relative top-0 end-0" width={250} src={profile} alt='profile' /> */}
+            <motion.div 
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                    duration: 0.9,
+                    scale: { type: "spring", visualDuration: 0.5, bounce: 0.5 },
+                }}
+                className={ `overflow-scroll border-3 border border-success rounded-bottom-3 ps-4 pe-2 py-5 ${ style.bgWhiteTrans } text-black ${ style.widthConditional }  ${ style.borderTosca } shadow-lg` } style={{ zIndex:10, borderRadius:'0.8rem 15rem' }}
+            >
                 <div className="text-start">
                     <div className='my-2'>
-                        <p className='fs-1 mb-0'>Yusni</p>
+                        <p className={`fs-1 mb-0 ${ font.cinzel } fw-bold`}>Yusni</p>
                     </div>
 
                     <div>
@@ -24,15 +33,15 @@ const Salutation = () => {
                     </div>
                     
                     <div className='my-2'>
-                        <p className="fs-1 mb-0">Angga</p>
+                        <p className={`fs-1 mb-0 ${ font.cinzel } fw-bold`}>Angga</p>
                     </div>
                     <p className='border border-success d-block position-relative mb-4 mt-3' style={{width:'4rem'}}></p>
                 </div>
 
-                <p className={ `fw-bold fs-5` }>Assalamualaikum Warahmatullahi Wabarakatuh</p>
-                <p className='mt-4 mb-5'>Tanpa mengurangi rasa hormat, kami bermaksud mengundang Bapak/Ibu/Saudara/i <br/> pada acara pernikahan kami :</p>
+                <p className={ ` ${font.vidaloka} fw-semibold` }>Assalamualaikum Warahmatullahi Wabarakatuh</p>
+                <p className={`${font.caudex} mb-4`}>Tanpa mengurangi rasa hormat, kami bermaksud mengundang Bapak/Ibu/Saudara/i <br/> pada acara pernikahan kami :</p>
                 <Countdown />
-            </div>
+            </motion.div>
         </section>
     )
 }

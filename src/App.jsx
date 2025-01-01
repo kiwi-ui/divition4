@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Navbar from './components/Navbar'
 import Salutation from './pages/Salutation'
 import Couple from './pages/Couple'
@@ -12,6 +12,8 @@ import Credits from './pages/Credits'
 import Wishes from './pages/Wishes'
 import index from './index.module.css'
 import MusicPlayer from './components/MusicPlayer'
+import * as motion from 'motion/react-client'
+import { AnimatePresence } from 'framer-motion'
 
 function App() {
   const [isModalShown, setIsModalShown] = useState(false);
@@ -25,19 +27,29 @@ function App() {
     <Gift />,
     <Credits />,
     <Closing />
-
   ]
+  const constraintDrag = useRef(null);
   return (
-    <body className={`${index.bgCoverMain} vh-100 px-4`}>
-      {/* <img className={`position-absolute top-0 start-0 h-25 ${style.mirror}`} src={frame} alt='frame' />
-      <img className="position-absolute top-0 end-0 h-25" src={frame} alt='frame' /> */}
-      <MusicPlayer />
-      <div className={`main-content h-100 d-flex justify-content-center align-items-center`}>
-           {pagesArray[activeIndex]}
-      </div>
+    <body  className={`${ index.bgCoverMain } vh-100 px-4`} >
+      <motion.div ref={ constraintDrag }>
+        <motion.div
+          drag
+          dragConstraints={ constraintDrag }
+          dragElastic= {0.5}
+          >
+          <MusicPlayer />
+        </motion.div>
+      </motion.div>
 
-      {/* <img className={`position-absolute bottom-0 start-0 h-25 ${ style.rotate180 }`} src={frame} alt='frame' />
-      <img className={`position-absolute bottom-0 end-0 h-25 ${style.rotate180} ${style.mirrorY}`} src={frame} alt='frame' /> */}
+          <AnimatePresence>
+      <motion.div
+       initial={false}
+       animate={{ scale: 1, opacity: 1 }}
+       exit={{ scale: 0, opacity: 0 }}
+       className={`main-content h-100 d-flex justify-content-center align-items-center`}>
+            {pagesArray[activeIndex]}
+      </motion.div>
+          </AnimatePresence>
       <Navbar activeIndex={ activeIndex } setActiveIndex={ setActiveIndex } />
     </body>
   )

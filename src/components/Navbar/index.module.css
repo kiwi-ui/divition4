@@ -6,7 +6,7 @@ a {text-decoration: none; color: white;}
 
 @media screen and (max-width : 600px) {
     .wNavbar {
-        width: 100%;
+        width: 80%;
         left: 0;
     }
 
@@ -23,7 +23,7 @@ a {text-decoration: none; color: white;}
     display: none;
 }
 .active {
-    color: #62c394 !important;
+    color: #198754 !important;
     font-weight: bolder;
 }
 .p0{
@@ -31,7 +31,7 @@ a {text-decoration: none; color: white;}
 }
 
 .toggleNavbarTextColor{
-    color: #62c394;
+    color: #198754;
 }
 .navbarBg{
     background-color: rgba(255, 255, 255, 0.341);
@@ -40,6 +40,11 @@ a {text-decoration: none; color: white;}
     max-width: 380px;
 }
 .navHover:hover{
-    color: #62c394 !important;
+    color: #52b989 !important;
     background-color: transparent !important;
+}
+.bgWhiteTrans{
+    /* background-color: #198754 */
+    background-color: rgb(211, 219, 219);
+    /* background-color: rgb(252, 236, 217); */
 }

@@ -14,7 +14,7 @@
     background-size: cover;
 }
 .bgCover3::before{
-    content: "";
+    content: ""; 
     position: absolute;
     top: 0;
     left: 0;
@@ -24,7 +24,13 @@
     z-index: 0;
 }
 .bgButton{
-    background-color: #a1dad4;
+    background-color: #21ad6c !important;
+}
+.bgButton:hover{
+    background-color: #21ad6c !important;
+}
+.textPrimary {
+    color: #38fba0;
 }
 /* @media only screen and (max-width: 600px) and (min-width: 120px) {
     .bgCover{

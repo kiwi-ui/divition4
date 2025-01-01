@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import style from './index.module.css';
 import Slide from '../../assets/animation';
+import font from '../../fonts.module.css';
 
 const Countdown = () => {
     const [event, setEvent] = useState({
@@ -36,27 +37,27 @@ const Countdown = () => {
                     {!isEventOver ?
                         <div className={`row text-white`}>
                             <div className="col-3 ">
-                                <div className={` border border-1 px-4 ${style.bgCountdown} text-center d-flex align-items-center flex-column rounded-2 shadow-sm`}>
-                                    <p className="fw-bold fs-4 pt-1 mb-0">{event.days}</p>
-                                    <p className="m-0 pb-1 ">Hari</p>
+                                <div className={` border border-1 bg-success px-4 ${style.bgCountdown} text-center d-flex align-items-center flex-column rounded-2 shadow-sm`}>
+                                    <p className={`${font.aboreto} fw-bold fs-5 pt-1 mb-0`}>{event.days}</p>
+                                    <p className={` ${font.caudex} fw-semibold m-0 pb-1`} style={{fontSize:'0.7rem'}}>Hari</p>
                                 </div>
                             </div>
                             <div className="col-3 ">
-                                <div className={` border border-1 px-4 ${style.bgCountdown} text-center d-flex align-items-center flex-column rounded-2 shadow-sm`}>
-                                    <p className="fw-bold fs-4 pt-1 mb-0">{event.hours}</p>
-                                    <p className="m-0 pb-1 ">Jam</p>
+                                <div className={` border border-1 bg-success px-4 ${style.bgCountdown} text-center d-flex align-items-center flex-column rounded-2 shadow-sm`}>
+                                    <p className={`${font.aboreto} fw-bold fs-5 pt-1 mb-0`}>{event.hours}</p>
+                                    <p className={` ${font.caudex} fw-semibold m-0 pb-1`} style={{fontSize:'0.7rem'}}>Jam</p>
                                 </div>
                             </div>
                             <div className="col-3 ">
-                                <div className={` border border-1 px-4 ${style.bgCountdown} text-center d-flex align-items-center flex-column rounded-2 shadow-sm`}>
-                                    <p className="fw-bold fs-4 pt-1 mb-0">{event.minutes}</p>
-                                    <p className="m-0 pb-1 ">Menit</p>
+                                <div className={` border border-1 bg-success px-4 ${style.bgCountdown} text-center d-flex align-items-center flex-column rounded-2 shadow-sm`}>
+                                    <p className={`${font.aboreto} fw-bold fs-5 pt-1 mb-0`}>{event.minutes}</p>
+                                    <p className={` ${font.caudex} fw-semibold m-0 pb-1`} style={{fontSize:'0.7rem'}}>Menit</p>
                                 </div>
                             </div>
                             <div className="col-3 ">
-                                <div className={` border border-1 px-4 ${style.bgCountdown} text-center d-flex align-items-center flex-column rounded-2 shadow-sm`}>
-                                    <p className="fw-bold fs-4 pt-1 mb-0">{event.seconds}</p>
-                                    <p className="m-0 pb-1 ">Detik</p>
+                                <div className={` border border-1 bg-success px-4 ${style.bgCountdown} text-center d-flex align-items-center flex-column rounded-2 shadow-sm`}>
+                                    <p className={`${font.aboreto} fw-bold fs-5 pt-1 mb-0`}>{event.seconds}</p>
+                                    <p className={` ${font.caudex} fw-semibold m-0 pb-1`} style={{fontSize:'0.7rem'}}>Detik</p>
                                 </div>
                             </div>
                         </div>
