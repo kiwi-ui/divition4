@@ -1,4 +1,3 @@
-import { GrFormClose } from 'react-icons/gr';
 import qr from '../../assets/qr-1.webp';
 import { useState } from 'react';
 import { MdContentCopy } from "react-icons/md";

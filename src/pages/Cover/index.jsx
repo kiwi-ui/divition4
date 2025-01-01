@@ -1,13 +1,7 @@
 import { useParams } from 'react-router-dom';
-// import style from'./style.module.css';
 import { BsEnvelopeHeart } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
-// import mainStyle from '../../App.module.css';
-import sunflower from '../../assets/sunflower.webp';
-import profile from '../../assets/profile.webp';
-import frame from '../../assets/frame.webp';
 import style from './index.module.css';
-import bgCover3 from '../../assets/bgCover3.png';
 import font from '../../fonts.module.css';
 import * as motion from 'motion/react-client'
 
@@ -34,13 +28,11 @@ const Cover = () => {
                     <p className={`fw-bold fs-4 ${font.vidaloka} mb-4`}>{ name }</p>
                 </div>
             </motion.div>
+
             <button className={ `${style.bgButton} rounded-3 px-3 py-2 position-relative text-white border-0 d-flex flex-row align-items-center justify-content-center align-items-center gap-2 shadow`}>
                 <BsEnvelopeHeart className='fw-bold'/>
                 <span className="text-white text-decoration-none mb-0 fw-semibold" onClick={ () => hideCover() }>Buka Undangan</span>
             </button>
-
-            {/* <img className={`position-absolute bottom-0 start-0 h-25 ${ style.rotate180 }`} src={frame} alt='frame' />
-            <img className={`position-absolute bottom-0 end-0 h-25 ${style.rotate180} ${style.mirrorY}`} src={frame} alt='frame' /> */}
         </section>
   )
 }
