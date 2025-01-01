@@ -6,7 +6,7 @@ import { BsPlayCircle } from "react-icons/bs";
 
 const MusicPlayer = () => {
     const audioRef = useRef(new Audio(song));
-    const [isPlaying, setIsPlaying] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(true);
 
     const toggleSong = () => {
         const audio = audioRef.current;
